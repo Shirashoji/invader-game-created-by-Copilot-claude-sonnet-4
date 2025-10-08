@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インベーダーゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>インベーダーゲーム</h1>
+            <div class="game-info">
+                <span id="score">スコア: 0</span>
+                <span id="lives">ライフ: 3</span>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- タッチデバイス用のコントロール -->
+            <div class="touch-controls" id="touchControls">
+                <div class="movement-controls">
+                    <button class="control-btn" id="leftBtn">←</button>
+                    <button class="control-btn" id="rightBtn">→</button>
+                </div>
+                <button class="control-btn fire-btn" id="fireBtn">発射</button>
+            </div>
+        </div>
+        
+        <!-- ゲーム開始画面 -->
+        <div class="game-screen" id="startScreen">
+            <h2>インベーダーゲーム</h2>
+            <p>操作方法:</p>
+            <p>PC: ←→ キーで移動、スペースキーで発射</p>
+            <p>タブレット: 画面下のボタンで操作</p>
+            <button class="start-btn" id="startBtn">ゲーム開始</button>
+        </div>
+        
+        <!-- ゲームオーバー画面 -->
+        <div class="game-screen" id="gameOverScreen">
+            <h2>ゲームオーバー</h2>
+            <p>最終スコア: <span id="finalScore">0</span></p>
+            <button class="start-btn" id="restartBtn">再挑戦</button>
+        </div>
+        
+        <!-- ゲームクリア画面 -->
+        <div class="game-screen" id="gameClearScreen">
+            <h2>ゲームクリア！</h2>
+            <p>おめでとうございます！</p>
+            <p>最終スコア: <span id="clearScore">0</span></p>
+            <button class="start-btn" id="nextStageBtn">再挑戦</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
