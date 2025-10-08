@@ -1,4 +1,4 @@
-# インベーダーゲーム (Invader Game Created by Gemini)
+# インベーダーゲーム (Invader Game Created by Copilot-claude-sonnet-4 )
 
 HTML5 Canvas + JavaScript で作成したクラシックなインベーダーゲームです。PC・タブレットの両方に対応しています。
 
@@ -72,7 +72,7 @@ npx serve .
 ## 📂 プロジェクト構造
 
 ```
-invader-game-created-by-gemini/
+invader-game-created-by-Copilot-claude-sonnet-4/
 ├── index.html      # メインHTMLファイル
 ├── styles.css      # スタイルシート
 ├── game.js         # ゲームロジック
